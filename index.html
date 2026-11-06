@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatisierungspotenzial-Rechner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Automatisierungspotenzial-Rechner</h1>
+  <p>Finde in 2 Minuten heraus, wie viel Zeit du mit Automatisierung sparen kannst.</p>
+
+  <form id="rechner-form">
+    <label for="name">Dein Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Deine E-Mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="bereich">In welchem Bereich?</label>
+    <select id="bereich" name="bereich" required>
+      <option value="">Bitte wählen</option>
+      <option value="vertrieb">Vertrieb</option>
+      <option value="marketing">Marketing</option>
+      <option value="kundenservice">Kundenservice</option>
+      <option value="buchhaltung">Buchhaltung</option>
+      <option value="sonstiges">Sonstiges</option>
+    </select>
+
+    <label for="aufgaben">Welche wiederkehrenden Aufgaben kosten dich oder dein Team Zeit?</label>
+     <textarea id="aufgaben" name="aufgaben" rows="4" minlength="10" maxlength="1000" required></textarea>
+
+    <label for="stunden">Stunden pro Woche für diese Aufgaben (pro Person)</label>
+    <input type="number" id="stunden" name="stunden" min="1" max="40" step="0.5" required>
+
+    <label for="personen">Wie viele Personen machen diese Aufgaben?</label>
+    <input type="number" id="personen" name="personen" min="1" max="500" required>
+
+    <label for="stundensatz">Kosten pro Arbeitsstunde (in €)</label>
+    <input type="number" id="stundensatz" name="stundensatz" min="10" max="300" value="50" required>
+
+        <div class="honig" aria-hidden="true">
+      <label for="website">Website (bitte leer lassen)</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
+    <label class="checkbox">
+      <input type="checkbox" id="einwilligung" name="einwilligung" required>
+      Ich bin einverstanden, dass meine Angaben gespeichert werden, um mir das Ergebnis zu schicken.
+    </label>
+
+    <button type="submit">Potenzial berechnen</button>
+  </form>
+
+  <div id="ergebnis"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+  <div id="ergebnis"></div>
+  <div id="ki-ideen"></div>

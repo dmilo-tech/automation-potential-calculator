@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkbox {
+  font-weight: normal;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px;
+  font-size: 16px;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2c5282;
+}
+#ergebnis {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ebf4ff;
+  border-radius: 8px;
+}
+
+#ergebnis:empty {
+  display: none;
+}
+
+.gross {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+.hinweis {
+  font-size: 14px;
+  color: #555;
+}
+#ki-ideen {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f0fff4;
+  border-radius: 8px;
+}
+
+#ki-ideen:empty {
+  display: none;
+}
+button:disabled {
+  background: #a0aec0;
+  cursor: wait;
+}
+.honig {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.idee {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.idee h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.idee p {
+  margin: 4px 0;
+}
